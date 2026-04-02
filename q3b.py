@@ -11,6 +11,8 @@ def add_binary(a, b):
             y+=2**i
     tot=x+y
     res="" 
+    if tot==0:
+        return "Ob0"
     while tot>0:
         res+=str(tot%2)
         tot//=2
